@@ -53,5 +53,29 @@ namespace CrudUbicaciones_MSM_TIDSM4A
             oUbicacionesDal.Agregar(datosUbicacion());
             ListarUbicaciones();
         }
+
+        protected void SeleccionRegistro(object sender, GridViewCommandEventArgs e)
+        {
+            int filaSeleccionada = int.Parse(e.CommandArgument.ToString());
+
+            txtIDn.Value = gvUbicaciones.Rows[filaSeleccionada].Cells[1].Text;
+            txtUbicacion.Text = gvUbicaciones.Rows[filaSeleccionada].Cells[2].Text;
+            txtLat.Text = gvUbicaciones.Rows[filaSeleccionada].Cells[3].Text;
+            txtLong.Text = gvUbicaciones.Rows[filaSeleccionada].Cells[4].Text;
+
+            //Habilita el boton eliminar y modificar y deshabilita el boton de agregar cada que se de click en "Seleccionar"
+
+            btnEliminar.Enabled = true;
+            btnModificar.Enabled = true;
+            btnAgregar.Enabled = false;
+
+        }
+
+        protected void EliminarRegistro(object sender, CommandEventArgs e)
+        {
+            oUbicacionesDal = new ubicaciones_DAL();
+            oUbicacionesDal.Borrar(datosUbicacion());
+            ListarUbicaciones();
+        }
     }
 }

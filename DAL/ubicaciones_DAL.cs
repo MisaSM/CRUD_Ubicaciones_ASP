@@ -29,7 +29,12 @@ namespace DAL
 
         }
         public void Modificar() { }
-        public void Borrar() { }
+        public bool Borrar(ubicaciones_BLL oUbicacionesBLL) {
+            SqlCommand cmdComando = new SqlCommand();
+            cmdComando.Parameters.Add("@id", SqlDbType.Int).Value = oUbicacionesBLL.ID;
+            cmdComando.CommandText = "DELETE FROM Direcciones WHERE ID = @id";
+            return oConexion.EjecutarComandoSQL(cmdComando);
+        }
 
         //hacer una consulta para ver los objetos de la bd
         public DataTable Listar() {

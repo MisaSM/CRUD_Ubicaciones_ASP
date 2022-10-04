@@ -4,3 +4,9 @@ C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.csproj.Assem
 C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.dll
 C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.pdb
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\bin\Debug\BLL.dll
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\bin\Debug\BLL.pdb
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\obj\Debug\BLL.dll
+C:\Users\PC19\Documents\Shofi\CRUD_Ubicaciones_ASP\BLL\obj\Debug\BLL.pdb
