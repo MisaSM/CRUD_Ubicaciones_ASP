@@ -1,0 +1,6 @@
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\bin\Debug\BLL.dll
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\bin\Debug\BLL.pdb
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.dll
+C:\Users\LENOVO\Desktop\Practica continuacion\App\BLL\obj\Debug\BLL.pdb
