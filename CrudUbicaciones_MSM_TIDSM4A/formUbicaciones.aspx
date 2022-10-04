@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src='https://maps.google.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyBg8g8zcX5yG2KCtULlw-4eQ-lXd-WEBeI'></script>
+    <script type="text/javascript" src='https://maps.google.com/maps/api/js?sensor=false&libraries=places&key='></script>
     <script src="js/locationpicker.jquery.js"></script>
     <title> Control de ubicaciones </title>
 </head>
