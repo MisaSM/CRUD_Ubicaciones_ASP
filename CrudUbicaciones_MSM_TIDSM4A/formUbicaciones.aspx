@@ -39,14 +39,14 @@
                         <!-- Controles de altas, bajas y cambios -->
                         <div class="form-group">
                             <asp:Button ID="btnAgregar" CssClass="btn btn-success" runat="server" Text="Agregar" UseSubmitBehavior="false" OnClick="AgregarRegistro"/>
-                            <asp:Button ID="btnModificar" CssClass="btn btn-warning" runat="server" Text="Modificar" UseSubmitBehavior="false" Enabled="false"/>
+                            <asp:Button ID="btnModificar" CssClass="btn btn-warning" runat="server" Text="Modificar" UseSubmitBehavior="false" Enabled="false" OnCommand="ModificarRegistro"/>
                             <asp:Button ID="btnEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" UseSubmitBehavior="false" Enabled="false" OnCommand="EliminarRegistro"/>
-                            <asp:Button ID="btnLimpiar" CssClass="btn btn-default" runat="server" Text="Vaciar campos" UseSubmitBehavior="false" Enabled="false"/>
+                            <asp:Button ID="btnLimpiar" CssClass="btn btn-default" runat="server" Text="Vaciar campos" UseSubmitBehavior="false" Enabled="true" OnCommand="LimpiarRegistro"/>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <br />
-                        <h1>Ubicacioness</h1>
+                        <h1>Ubicacionessss</h1>
                         <asp:GridView ID="gvUbicaciones" runat="server" CssClass="table-responsive table table-bordered" Width="1368px" OnRowCommand="SeleccionRegistro">
                             <Columns>
                                 <asp:ButtonField CommandName="btnSeleccionar" Text="Seleccionar">

@@ -28,7 +28,17 @@ namespace DAL
             return oConexion.EjecutarComandoSQL(cmdComando);
 
         }
-        public void Modificar() { }
+        public bool Modificar(ubicaciones_BLL oUbicacionesBLL) 
+        {
+            SqlCommand cmdComando = new SqlCommand();
+            cmdComando.Parameters.Add("@id", SqlDbType.Int).Value = oUbicacionesBLL.ID;
+            cmdComando.CommandText = "UPDATE Direcciones SET Ubicacion = @Ubicacion, Latitud = @Latitud, Longitud = @Longitud WHERE ID = @id";
+            cmdComando.Parameters.Add("@Ubicacion", SqlDbType.VarChar).Value = oUbicacionesBLL.Ubicacion;
+            cmdComando.Parameters.Add("@Latitud", SqlDbType.VarChar).Value = oUbicacionesBLL.Latitud;
+            cmdComando.Parameters.Add("@Longitud", SqlDbType.VarChar).Value = oUbicacionesBLL.Longitud;
+
+            return oConexion.EjecutarComandoSQL(cmdComando);        
+        }
         public bool Borrar(ubicaciones_BLL oUbicacionesBLL) {
             SqlCommand cmdComando = new SqlCommand();
             cmdComando.Parameters.Add("@id", SqlDbType.Int).Value = oUbicacionesBLL.ID;

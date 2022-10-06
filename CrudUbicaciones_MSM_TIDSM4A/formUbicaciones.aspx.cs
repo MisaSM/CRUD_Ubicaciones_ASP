@@ -77,5 +77,26 @@ namespace CrudUbicaciones_MSM_TIDSM4A
             oUbicacionesDal.Borrar(datosUbicacion());
             ListarUbicaciones();
         }
+
+        protected void ModificarRegistro(object sender, CommandEventArgs e)
+        {
+            oUbicacionesDal = new ubicaciones_DAL();
+            oUbicacionesDal.Modificar(datosUbicacion());
+            ListarUbicaciones();
+        }
+
+        protected void LimpiarRegistro(object sender, CommandEventArgs e)
+        {
+            
+            oUbicacionesDal = new ubicaciones_DAL();
+
+            txtLat.Text = "27.365938954017043";
+            txtLong.Text = "-109.93136356074504";
+
+            btnEliminar.Enabled = false;
+            btnModificar.Enabled = false;
+            btnAgregar.Enabled = true;
+            ListarUbicaciones();
+        }
     }
 }
